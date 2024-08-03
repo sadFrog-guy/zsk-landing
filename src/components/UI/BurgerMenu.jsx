@@ -32,7 +32,7 @@ const BurgerMenu = () => {
         ></div>
       </div>
       <nav
-        className={`fixed z-50 bottom-0 right-0 h-[88.1vh] bg-white shadow-lg w-48 transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-[101%]'}`}
+        className={`fixed z-50 top-[12vh] right-0 h-[88.1vh] bg-white shadow-lg w-48 transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-[101%]'}`}
       >
         <ul className="flex flex-col">
             {navItems.map(item => {

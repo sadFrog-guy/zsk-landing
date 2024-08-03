@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+}
+
+.limit-x {
+    padding: 0 80px;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('/src/fonts/HelveticaNeueCyr-Roman.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('/src/fonts/HelveticaNeueCyr-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url('/src/fonts/HelveticaNeueCyr-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Days Sans';
+    src: url('/src/fonts/Days\ Sans\ Black.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ETC */
+
+.scale-arrow-on-hover {
+    transform: scale(1);
+    transition: all .2s linear;
+}
+
+.scale-arrow-on-hover:hover {
+    transform: scale(1.1);
+}
+
+.scale-on-hover > div > .scale-on-hover-child > img {
+    transform: scale(1);
+    transition: all .2s linear;
+}
+.scale-on-hover:hover > div > .scale-on-hover-child > img {
+    transform: scale(1.1);
+}
+.show-on-laptop {
+    display: none;
+}
+
+@media (min-width: 1310px) and (max-width: 1370px) {
+    .show-on-laptop {
+        display: block;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-mobile {
+        padding: 0 20px;
+    }
+
+    .about-mobile {
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 0 30px;
+    }
+
+    .about-mobile > .w-1\/2 {
+        width: 100%;
+    }
+
+    .about-lower-gap {
+        gap: 20px;
+    }
+
+    .about-mobile > .w-1\/2 > p {
+        font-size: 0.8rem;
+    }
+
+    .about-lower-pad {
+        padding: 30px 0;
+        padding-bottom: 40px;
+        height: auto;
+    }
+
+    .hero-lower-fonts {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero-lower-fonts > h1 {
+        font-size: 1.5rem /* 20px */;
+        line-height: 2rem /* 28px */;
+        margin-bottom: 30px;
+    }
+
+    .hero-lower-fonts > h2 {
+        font-size: 0.9rem ;
+        line-height: 1.3rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-lower-fonts > h3 {
+        font-size: 0.6rem /* 18px */;
+        line-height: 0.9rem /* 28px */;
+    }
+
+    .services-mobile {
+        padding: 20px;
+        padding-bottom: 40px;
+        height: auto;
+    }
+
+    .services-mobile > div {
+        justify-content: center;
+    }
+
+    .projects-mobile {
+        height: auto;
+    }
+
+    .projects-mobile-blocks {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .projects-big {
+        width: 100%;
+        height: 210px;
+    }
+
+    .projects-big > .projects-title > h1 {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        padding-right: 40px;
+    }
+
+    .projects-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .projects-title {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .projects-small {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px;
+        height: auto;
+        gap: 30px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1900px) {
+    .about-lower-gap > .leading-snug {
+        font-size: 1.5rem;
+    }
+
+    .header-mobile {
+        height: 8vh;
+    }
+
+    .hero-adaptive {
+        height: 92vh;
+    }
+
+    .hero-lower-fonts {
+        transform: scale(1.5);
+    }
+
+    .heading-adaptive {
+        font-size: 2.5rem;
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+
+    .show-on-laptop {
+        display: block;
+        width: 100%;
+        bottom: 130px;
+    }
+
+    .services-mobile, .projects-mobile, .about-lower-pad {
+        height: auto;
+        padding-bottom: 90px;
+    }
+
+    .service-item {
+        max-width: 550px;
+        height: 350px;
+    }
+    
+    .service-item > div {
+        margin-bottom: 30px;
+    }
+
+    .service-item > div > div {
+        width: 86px;
+        height: 86px;
+    }
+
+    .service-item > div > div > img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .service-item > div > h1 {
+        font-size: 2.5rem;
+    }
+
+    .service-item > p {
+        font-size: 1.4rem;
+    }
+}

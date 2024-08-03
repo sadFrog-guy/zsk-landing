@@ -61,12 +61,12 @@ export default function Projects() {
                 <div className="absolute bottom-[20px] left-[20px] z-30 projects-title">
                     {index == 2
                         ? (
-                            <h1 className='text-white font-days text-xl'>
+                            <h1 className='text-white font-days font-bold text-xl'>
                                 {sliderPacks[index].title}
                             </h1>
                         )
                         : (
-                            <h1 className='text-white font-days text-3xl'>
+                            <h1 className='text-white font-days font-bold text-3xl'>
                                 {sliderPacks[index].title}
                             </h1>
                         )

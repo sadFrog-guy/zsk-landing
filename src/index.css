@@ -59,6 +59,9 @@
 .show-on-laptop {
     display: none;
 }
+.show-on-mobile {
+    display: none;
+}
 
 @media (min-width: 1310px) and (max-width: 1370px) {
     .show-on-laptop {
@@ -67,6 +70,10 @@
 }
 
 @media (min-width: 360px) and (max-width: 500px) {
+
+    .show-on-mobile {
+        display: block;
+    }
 
     .hide-on-mobile {
         display: none;

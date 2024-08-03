@@ -33,7 +33,7 @@
 
 @font-face {
     font-family: 'Days Sans';
-    src: url('/src/fonts/Days\ Sans\ Black.otf') format('otf');
+    src: url('/src/fonts/Days\ Sans\ Black.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }

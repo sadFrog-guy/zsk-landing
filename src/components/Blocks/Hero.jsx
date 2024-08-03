@@ -6,7 +6,7 @@ export default function Hero() {
   const query = useMediaQuery("(min-width: 360px) and (max-width: 500px)")
 
   return (
-    <div className="h-[88vh] w-full relative flex justify-center items-center hero-adaptive overflow-hidden">
+    <div className={`h-[88vh] w-full relative flex justify-center items-center hero-adaptive overflow-hidden ${query ? 'mt-[12vh]' : ''}`}>
         <div className="font-days text-white relative z-40 text-center hero-lower-fonts">
         <h1 className="text-3xl mb-[18px]">Завод Специальных Коммуникаций</h1>
         <h2 className="text-2xl mb-[20px]">

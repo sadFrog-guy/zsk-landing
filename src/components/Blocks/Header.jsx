@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full h-[12vh] z-50 limit-x bg-white flex justify-between items-center header-mobile ${query ? 'border-b-2 border-solid border-custom-orange sticky top-0 left-0' : ''}`}
+      className={`w-full h-[12vh] z-50 limit-x bg-white flex justify-between items-center header-mobile ${query ? 'border-b-2 border-solid border-custom-orange fixed top-0 left-0' : ''}`}
     >
         <img src={logoMini} className='h-[80%]' alt="" />
 

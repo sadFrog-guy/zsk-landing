@@ -45,7 +45,7 @@ function App() {
             <p className='font-helvemed text-base text-gray-500 cursor-pointer'>
               Номер телефона: &nbsp;
               <span className='text-custom-orange'>
-                +996 (0550) 142-575
+                +996 (550) 142-575
               </span>
             </p>
           </div>

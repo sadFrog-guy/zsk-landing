@@ -46,7 +46,7 @@ const BurgerMenu = () => {
       </nav>
         <div
             onClick={toggleMenu}
-            className={`${!isOpen && 'hidden'} fixed bottom-0 left-0 bg-black opacity-80 w-full h-[88.1vh] z-20`}
+            className={`${!isOpen && 'hidden'} fixed top-[12vh] left-0 bg-black opacity-80 w-full h-[88.1vh] z-20`}
         >
         </div>
     </div>

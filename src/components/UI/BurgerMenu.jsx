@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { navItems } from './../../utils/consts';
 import NavItem from './NavItem';
+import LanguageSwitch from './LanguageSwitch';
 
-const BurgerMenu = () => {
+const BurgerMenu = ({navItems}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -42,6 +42,10 @@ const BurgerMenu = () => {
                 </NavItem>
                 )
             })}
+        </ul>
+
+        <ul className='pt-[20px]'>
+          <LanguageSwitch/>
         </ul>
       </nav>
         <div

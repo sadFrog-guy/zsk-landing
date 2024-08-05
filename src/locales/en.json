@@ -1,0 +1,41 @@
+{
+    "nav1": "About Us",
+    "nav2": "Services",
+    "nav3": "Projects",
+    "nav4": "Contacts",
+    "hero1": "Special Communications Plant",
+    "hero2": "Your partner in <1>engineering</1> solutions",
+    "hero3": "Design, equipment, and installation of <br/> engineering systems of any complexity",
+    "hero4": "Learn more",
+    "about1": "ZSK Company - Special Communications Plant - is a high-tech engineering company engaged in the design, equipment, and installation of engineering communications necessary for the functioning of modern production. The company employs highly qualified specialists capable of successfully solving profile tasks at the highest engineering and technological level.",
+    "about2": "The company was opened in Jalal-Abad, a city well known for its resort with mineral springs and therapeutic muds. The resort is famous in the former USSR countries, and thousands of people undergo treatment there every year. The city is home to many qualified specialists related to medicine, food, and chemical industries, and our company plans to expand its business by utilizing the rich experience of local specialists and relying on modern technologies and materials.",
+    "services": {
+        "pipeInstallation": {
+            "title": "Pipe <br/> Installation",
+            "text": "Installation of pipelines for gas and liquid supply, including hazardous production, installation of pipelines, shut-off and control valves for ultra-clean liquids and gases, design, manufacture, and installation of gas cabinets and gas panels."
+        },
+        "vacuumLines": {
+            "title": "Vacuum <br/> Lines",
+            "text": "Calculation, design, and installation of vacuum lines, including ultra-high vacuum and vacuum exhaust mixtures prone to resettlement, with the design and installation of specialized equipment."
+        },
+        "heatExchangeUnits": {
+            "title": "Heat Exchange <br/> Units",
+            "text": "Calculation, design, and installation of vacuum lines, including systems for ultra-high vacuum and vacuum exhaust mixtures prone to resettlement."
+        },
+        "scrubbers": {
+            "title": "Scrubbers <br/> (Gas Cleaning)",
+            "text": "Development, installation, and commissioning of installations for neutralizing exhaust process gases (scrubbers), including the design and implementation of comprehensive air cleaning systems."
+        },
+        "componentsSupply": {
+            "title": "Components <br/> Supply",
+            "text": "Development, installation, and commissioning of installations for neutralizing exhaust process gases (scrubbers), including the design, installation, and maintenance of comprehensive cleaning systems."
+        }
+    },
+    "projects1": "Pharmaceuticals",
+    "projects2": "Food Production",
+    "projects3": "Chemical Production",
+    "footer1": "Address",
+    "footer2": "Phone Number",
+    "footer3": "Jalal-Abad Region, <br /> Jalal-Abad, Zhambyl St., 4",
+    "footer4": "LLC \"Special Communications Plant\""
+}

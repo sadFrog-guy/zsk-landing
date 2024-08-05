@@ -1,11 +1,33 @@
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import logoMini from '../../assets/logo-mini.png'
-import {navItems} from '../../utils/consts';
 import useMediaQuery from '../hooks/useMediaQuery';
 import BurgerMenu from '../UI/BurgerMenu';
 import NavItem from '../UI/NavItem';
+import LanguageSwitch from '../UI/LanguageSwitch';
 
 export default function Header() {
+  const { t } = useTranslation()
   const query = useMediaQuery("(min-width: 360px) and (max-width: 500px)")
+
+  const navItems = [
+    {
+        title: t('nav1'),
+        link: '#about'
+    },
+    {
+        title: t('nav2'),
+        link: '#services'
+    },
+    {
+        title: t('nav3'),
+        link: '#projects'
+    },
+    {
+        title: t('nav4'),
+        link: '#contacts'
+    },
+  ]
 
   return (
     <header
@@ -23,7 +45,7 @@ export default function Header() {
           })}
         </div>
 
-        <BurgerMenu/>
+        {query ? <BurgerMenu navItems={navItems}/> : <LanguageSwitch/>}
     </header>
   )
 }

@@ -10,29 +10,32 @@ import slide7 from '../../assets/slide7.png'
 import slide8 from '../../assets/slide8.png'
 import slide9 from '../../assets/slide9.png'
 import arrowRight from '../../assets/right-chevron.png'
-
-const sliderPacks = [
-    {
-        title: 'Фармацевтика',
-        firstSlide: slide1,
-        secondSlide: slide2,
-        thirdSlide: slide3
-    },
-    {
-        title: 'Пищевое производство',
-        firstSlide: slide4,
-        secondSlide: slide5,
-        thirdSlide: slide6
-    },
-    {
-        title: 'Производство химической продукции',
-        firstSlide: slide7,
-        secondSlide: slide8,
-        thirdSlide: slide9
-    },
-]
+import { useTranslation } from 'react-i18next'
 
 export default function Projects() {
+    const { t } = useTranslation()
+
+    const sliderPacks = [
+        {
+            title: t('projects1'),
+            firstSlide: slide1,
+            secondSlide: slide2,
+            thirdSlide: slide3
+        },
+        {
+            title: t('projects2'),
+            firstSlide: slide4,
+            secondSlide: slide5,
+            thirdSlide: slide6
+        },
+        {
+            title: t('projects3'),
+            firstSlide: slide7,
+            secondSlide: slide8,
+            thirdSlide: slide9
+        },
+    ]
+
     const [index, setIndex] = useState(0)
     const [transitionValue, setTransitionValue] = useState("opacity-0")
 
@@ -53,7 +56,7 @@ export default function Projects() {
   return (
     <div id="projects" className='h-screen bg-custom-gradient py-[35px] projects-mobile'>
         <Heading variation="white">
-            Проекты
+            {t('nav3')}
         </Heading>
 
         <div key={sliderPacks[index].title} className="mt-[50px] flex justify-center gap-[32px] projects-mobile-blocks">
